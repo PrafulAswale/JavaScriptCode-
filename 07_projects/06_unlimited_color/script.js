@@ -13,11 +13,14 @@ const randomColor = function () {
 };
 let idInterval;
 document.getElementById('start').addEventListener('click', ()=>{
-   idInterval =  setInterval(() => {
+   if(!idInterval){
+    idInterval =  setInterval(() => {
         document.body.style.backgroundColor = randomColor();
     }, 1000);
+   }
     console.log(idInterval);
 })
 document.getElementById('stop').addEventListener('click', ()=>{
     clearInterval(idInterval);
+    idInterval = null;
 })
