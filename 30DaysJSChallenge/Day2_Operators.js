@@ -70,5 +70,6 @@ console.log(
 //Task 14: Write a program that uses the ternary operator to check if a number is positive or negative
 //and log the result to the console.
 console.log(
-  `num1 > num2 ? "true" : "false" => ` + (num1 > num2 ? "true" : "false")
+  `num1 > 0 ? "Positive" : "Negative" => ` +
+    (num1 > 0 ? "Positive" : "Negative")
 );
